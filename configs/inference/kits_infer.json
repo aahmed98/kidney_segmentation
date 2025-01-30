@@ -1,0 +1,13 @@
+{
+    "task": "segmentation",
+    "dataset": "kits",
+    "visualize_training_output": false,
+    "evaluate_val_predictions": true,
+    "data_params":{
+        "label_subset": {
+            "kidney": 1
+        },
+        "val_size": 0.1,
+        "cache_dataset": false
+    }
+}

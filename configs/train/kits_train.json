@@ -1,0 +1,24 @@
+{
+    "task": "segmentation",
+    "model": "unet",
+    "dataset": "kits",
+    "model_params": {
+        "dimensions" : 3,
+        "in_channels" : 1,
+        "channels" : [16, 32, 64, 128, 256],
+        "strides" : [2, 2, 2, 2],
+        "num_res_units": 2
+    },
+    "training_params": {
+        "loss_fn" : "dice",
+        "max_epochs" : 2,
+        "val_interval" : 2
+    },
+    "data_params":{
+        "label_subset": {
+            "kidney": 1
+        },
+        "val_size": 0.1,
+        "cache_dataset": true
+    }
+}
