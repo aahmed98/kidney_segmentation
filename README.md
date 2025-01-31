@@ -2,6 +2,8 @@
 
 3D kidney segmentation project using PyTorch and MONAI, implementing a UNet architecture for training on the KiTS (Kidney Tumor Segmentation) dataset. The model performs volumetric segmentation of kidneys from CT scans using sliding window inference.
 
+<img src="segmentation.png" alt="Alt text" width="1000">
+
 ## Setup
 ```bash
 # Clone repository
